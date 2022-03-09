@@ -136,7 +136,7 @@ proc `%`*(T:Track): JsonNode =
     fields["coverageTrackHeight"] = % 24
     fields["showSoftClips"] = % true
     fields["viewAsPairs"] = % true
-    fields["samplingDepth"] = % 10000
+    fields["samplingDepth"] = % 100000
   return JsonNode(kind: JObject, fields: fields)
 
 proc `$`*(T:Track): string =
